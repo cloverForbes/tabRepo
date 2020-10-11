@@ -9,15 +9,15 @@ router.get("/tabs", async (req, res) => {
 
 router.post("/tabs/new", async (req,res) => {
     console.log(req.body);
-    const tab = new Tab({
+    /*const tab = new Tab({
         title: req.body.title,
         composer: req.body.composer,
         tab: req.body.tab,
-    });
+    });*/
 
     /*await tab.save();
     res.send(tab);*/
-    res.send({body: "hi"});
+    res.send({body: "created tab"});
 })
 
 router.get("/post/:id", async (req, res) => {
